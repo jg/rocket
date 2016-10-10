@@ -1,0 +1,257 @@
+[01;34m.[00m
+├── [01;34mapp[00m
+│   ├── devel.hs
+│   ├── DevelMain.hs
+│   └── main.hs
+├── Application.hs
+├── Classifier.hs
+├── Client.hs
+├── Conduit.hs
+├── [01;34mconfig[00m
+│   ├── client_session_key.aes
+│   ├── favicon.ico
+│   ├── keter.yml
+│   ├── models
+│   ├── robots.txt
+│   ├── routes
+│   ├── settings.yml
+│   └── test-settings.yml
+├── [01;34mdist[00m
+│   ├── [01;34mbuild[00m
+│   │   ├── Application.dyn_hi
+│   │   ├── Application.dyn_o
+│   │   ├── Application.hi
+│   │   ├── Application.o
+│   │   ├── [01;34mautogen[00m
+│   │   │   ├── cabal_macros.h
+│   │   │   └── Paths_rocket.hs
+│   │   ├── Classifier.dyn_hi
+│   │   ├── Classifier.dyn_o
+│   │   ├── Classifier.hi
+│   │   ├── Classifier.o
+│   │   ├── Client.dyn_hi
+│   │   ├── Client.dyn_o
+│   │   ├── Client.hi
+│   │   ├── Client.o
+│   │   ├── Extractor.dyn_hi
+│   │   ├── Extractor.dyn_o
+│   │   ├── Extractor.hi
+│   │   ├── Extractor.o
+│   │   ├── Foundation.dyn_hi
+│   │   ├── Foundation.dyn_o
+│   │   ├── Foundation.hi
+│   │   ├── Foundation.o
+│   │   ├── [01;34mHandler[00m
+│   │   │   ├── Common.dyn_hi
+│   │   │   ├── Common.dyn_o
+│   │   │   ├── Common.hi
+│   │   │   ├── Common.o
+│   │   │   ├── Home.dyn_hi
+│   │   │   ├── Home.dyn_o
+│   │   │   ├── Home.hi
+│   │   │   └── Home.o
+│   │   ├── [01;34mImport[00m
+│   │   │   ├── NoFoundation.dyn_hi
+│   │   │   ├── NoFoundation.dyn_o
+│   │   │   ├── NoFoundation.hi
+│   │   │   └── NoFoundation.o
+│   │   ├── Import.dyn_hi
+│   │   ├── Import.dyn_o
+│   │   ├── Import.hi
+│   │   ├── Import.o
+│   │   ├── libHSrocket-0.0.0-14kb1QoXC3mBOroWkGoZ06.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-14kb1QoXC3mBOroWkGoZ06-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-4lfSAfpd78c6ErE4deutIY.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-4lfSAfpd78c6ErE4deutIY-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-6xzjw6InqDr9kN1cfkCDFp.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-6xzjw6InqDr9kN1cfkCDFp-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-7BCSdtIfh8dFMm0G5YGIkM.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-7BCSdtIfh8dFMm0G5YGIkM-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-8PDCxZ7PzI7KbgyEHk9OlB.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-8PDCxZ7PzI7KbgyEHk9OlB-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-CDHVUNBJiFU6w7SxHNpb7Y.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-CDHVUNBJiFU6w7SxHNpb7Y-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-DE8mf0LvyPeFgkdV14O7Y1.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-DE8mf0LvyPeFgkdV14O7Y1-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-DvArNK75Vcx3CNqQXAYuL7.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-DvArNK75Vcx3CNqQXAYuL7-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-Ek09qy4HyCP0IurQK1Tyyp.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-Ek09qy4HyCP0IurQK1Tyyp-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-K0O6zeKEqxd41TwWbRif1r.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-K0O6zeKEqxd41TwWbRif1r-ghc7.10.2.so[00m
+│   │   ├── libHSrocket-0.0.0-Li7QDYmShr7L6qZwdiF6vN.a
+│   │   ├── [01;32mlibHSrocket-0.0.0-Li7QDYmShr7L6qZwdiF6vN-ghc7.10.2.so[00m
+│   │   ├── Model.dyn_hi
+│   │   ├── Model.dyn_o
+│   │   ├── Model.hi
+│   │   ├── Model.o
+│   │   ├── ParagraphMaker.dyn_hi
+│   │   ├── ParagraphMaker.dyn_o
+│   │   ├── ParagraphMaker.hi
+│   │   ├── ParagraphMaker.o
+│   │   ├── Preparer.dyn_hi
+│   │   ├── Preparer.dyn_o
+│   │   ├── Preparer.hi
+│   │   ├── Preparer.o
+│   │   ├── [01;34mSettings[00m
+│   │   │   ├── StaticFiles.dyn_hi
+│   │   │   ├── StaticFiles.dyn_o
+│   │   │   ├── StaticFiles.hi
+│   │   │   └── StaticFiles.o
+│   │   ├── Settings.dyn_hi
+│   │   ├── Settings.dyn_o
+│   │   ├── Settings.hi
+│   │   └── Settings.o
+│   ├── [01;34mpackage.conf.inplace[00m
+│   │   ├── package.cache
+│   │   └── rocket-0.0.0-inplace.conf
+│   ├── setup-config
+│   └── touchCache.txt
+├── [01;34mdoc[00m
+│   ├── [01;32mmain.aux[00m
+│   ├── [01;32mmain.bbl[00m
+│   ├── [01;32mmain.blg[00m
+│   ├── [01;32mmain.fdb_latexmk[00m
+│   ├── main.fls
+│   ├── [01;32mmain.log[00m
+│   ├── [01;32mmain.out[00m
+│   ├── main.pdf
+│   ├── main.pyg
+│   ├── [01;31mmain.synctex.gz[00m
+│   ├── [01;32mmain.toc[00m
+│   ├── [01;32mMakefile[00m
+│   ├── [01;34msrc[00m
+│   │   ├── [01;32mabstrakt.tex[00m
+│   │   ├── [01;32mbibliografia.bib[00m
+│   │   ├── [01;32mbibliografia.tex[00m
+│   │   ├── [01;32mcd.tex[00m
+│   │   ├── [01;32mfirst_page.odt[00m
+│   │   ├── [01;32mfirst_page.pdf[00m
+│   │   ├── [01;34mimages[00m
+│   │   │   ├── boilerplate-webpage.png
+│   │   │   ├── boilerplate-webpage.xcf
+│   │   │   ├── cs_classification_step.png
+│   │   │   ├── rocket-main.png
+│   │   │   ├── rocket-showcase-1.png
+│   │   │   ├── rocket-showcase-2.png
+│   │   │   ├── snap-performance.png
+│   │   │   └── yesod-performance.png
+│   │   ├── [01;32mmain.tex[00m
+│   │   ├── [01;32mpakiety.tex[00m
+│   │   ├── [01;32mpm-unsrt.bstback[00m
+│   │   ├── [01;32mskroty.tex[00m
+│   │   ├── [01;32mspisrysunkowtablic.tex[00m
+│   │   ├── [01;32mspistresci.tex[00m
+│   │   ├── [01;32mstrona_tytulowa.sty[00m
+│   │   ├── [01;32mustawienia.tex[00m
+│   │   ├── [01;32mwstep.tex[00m
+│   │   ├── [01;32mzalaczniki.tex[00m
+│   │   └── [01;32mzyciorys.tex[00m
+│   └── [01;34mtmp[00m
+│       ├── [01;32mabstrakt.tex[00m
+│       ├── [01;32mbibliografia.bib[00m
+│       ├── [01;32mbibliografia.tex[00m
+│       ├── [01;32mcd.tex[00m
+│       ├── [01;32mfirst_page.odt[00m
+│       ├── [01;32mfirst_page.pdf[00m
+│       ├── [01;34mimg[00m
+│       │   ├── [01;32mlogo_pw.png[00m
+│       │   ├── [01;32mlogo_weiti.png[00m
+│       │   └── [01;32mportret.jpg[00m
+│       ├── main.aux
+│       ├── [01;32mmain.log[00m
+│       ├── [01;32mmain.tex[00m
+│       ├── [01;32mpakiety.tex[00m
+│       ├── [01;32mpm-unsrt.bst[00m
+│       ├── [01;32mskroty.tex[00m
+│       ├── [01;32mspisrysunkowtablic.tex[00m
+│       ├── [01;32mspistresci.tex[00m
+│       ├── [01;32mstrona_tytulowa.sty[00m
+│       ├── [01;32mustawienia.tex[00m
+│       ├── [01;32mwstep.tex[00m
+│       ├── [01;32mzalaczniki.tex[00m
+│       └── [01;32mzyciorys.tex[00m
+├── Extractor.hs
+├── filtered2.html
+├── filtered.html
+├── Foundation.hs
+├── [01;34mHandler[00m
+│   ├── Common.hs
+│   └── Home.hs
+├── [01;34mImport[00m
+│   └── NoFoundation.hs
+├── Import.hs
+├── matched.html
+├── Model.hs
+├── notes.org
+├── OldExtractor.hs
+├── page.html
+├── ParagraphMaker.hs
+├── Parser.hs
+├── Preparer.hs
+├── README.md
+├── rocket.cabal
+├── scratch
+├── [01;34mSettings[00m
+│   └── StaticFiles.hs
+├── Settings.hs
+├── stack.yaml
+├── [01;34mstatic[00m
+│   ├── [01;34mcss[00m
+│   │   └── bootstrap.css
+│   ├── [01;34mfonts[00m
+│   │   ├── glyphicons-halflings-regular.eot
+│   │   ├── glyphicons-halflings-regular.svg
+│   │   ├── glyphicons-halflings-regular.ttf
+│   │   └── glyphicons-halflings-regular.woff
+│   └── [01;34mtmp[00m
+│       ├── autogen-1B2M2Y8A.js
+│       ├── autogen-cWdljVlQ.css
+│       ├── autogen-DfdHDV8G.css
+│       ├── autogen-e2HqfXny.css
+│       ├── autogen-gwfWDmH6.css
+│       ├── autogen-igjPQi2y.css
+│       ├── autogen-JdFA_h2T.css
+│       ├── autogen--kfQn1ez.css
+│       ├── autogen-M0Y4zNfc.css
+│       ├── autogen-pGIQ-osA.css
+│       ├── autogen-q5fv2Pdi.css
+│       ├── autogen-RPBu9DaG.css
+│       ├── autogen-_RVakRuB.css
+│       ├── autogen-SWBGXCgb.js
+│       ├── autogen-VFgDQ2I5.js
+│       ├── autogen-wE0MyTn7.css
+│       ├── autogen-WLhHGWuZ.css
+│       ├── autogen-x9y7VV6W.css
+│       ├── autogen-XCEzYqNp.css
+│       └── autogen-ZMbJL0h3.css
+├── StopWords.hs
+├── stuff
+├── [01;34mtemplates[00m
+│   ├── default-layout.hamlet
+│   ├── default-layout-wrapper.hamlet
+│   ├── homepage.hamlet
+│   ├── homepage.julius
+│   └── homepage.lucius
+├── [01;34mtest[00m
+│   ├── [01;34mapp[00m
+│   ├── ClassifierSpec.hs
+│   ├── [01;34mfiles[00m
+│   │   ├── hackage-website.html
+│   │   ├── kaggle-blogpost-filtered.html
+│   │   └── kaggle-blogpost.html
+│   ├── [01;34mHandler[00m
+│   │   ├── CommonSpec.hs
+│   │   └── HomeSpec.hs
+│   ├── ParagraphMakerSpec.hs
+│   ├── PreparerSpec.hs
+│   ├── Spec.hs
+│   └── TestImport.hs
+├── Test.hs
+├── tmp.html
+├── unfiltered.html
+└── [01;34myesod-devel[00m
+    ├── arargs.txt
+    └── ghcargs.txt
+
+27 directories, 227 files

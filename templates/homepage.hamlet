@@ -1,0 +1,25 @@
+<h1>Rocket!
+
+<form method=post action=@{HomeR}#form enctype=#{formEnctype}>
+  ^{formWidget}
+  <button .btn .btn-primary type="submit"> Submit
+
+<hr />
+
+$maybe (url) <- urlOpt
+  <div .message .alert .alert-success>
+      Given website url: #{url}
+
+<center>
+  <div .step1>
+    <p>
+      Context-free classification step:
+    <div .step1content>
+      #{step1}
+
+  <div .step2>
+    <p>
+      Context-sensitive classification step:
+    <div .step2content>
+      #{step2}
+      

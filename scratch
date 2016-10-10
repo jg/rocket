@@ -1,0 +1,20 @@
+import Client
+import Extractor
+import Text.XmlHtml
+import Text.XmlHtml.Cursor
+import Blaze.ByteString.Builder
+let doc = docAtUrl "https://hackage.haskell.org/package/xmlhtml-0.2.3.4/docs/Text-XmlHtml-Cursor.html"
+let rt = docTopNode <$> doc
+let nodes = crowdedNodeChildren <$> rt
+let fragment = renderHtmlFragment UTF8 <$> nodes
+let s = toByteString fragment
+
+import Client
+import Preparer
+import qualified Data.Text as T
+f = do
+  doc <- docAtUrl "http://blog.kaggle.com/2015/11/09/profiling-top-kagglers-gilberto-titericz-new-1-in-the-world/"
+  let filtered = filterScriptTags doc in
+  writeFile "unfiltered.html" (T.unpack doc)
+  writeFile "filtered.html" (T.unpack filtered)
+fmap (writeFile "unfiltered.html") (map T.unpack doc)

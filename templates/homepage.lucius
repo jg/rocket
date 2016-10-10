@@ -1,0 +1,50 @@
+body {
+    padding: 0 0 20px 0;
+}
+input[type=text] {
+    width: 90%;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px
+}
+h2##{aDomId} {
+    color: #990
+}
+li {
+    line-height: 2em;
+    font-size: 16px
+}
+ol {
+    margin-bottom: 30px
+}
+footer {
+    text-align: center
+}
+.input-sm {
+    margin-left: 20px
+}
+
+.step1, .step2 {
+    width: 500px;
+    display: inline-block;
+}
+
+.step1content, .step2content {
+    width: 100%;
+    border: 1px solid black;
+    padding: 20px;
+    display: inline-block;
+}
+
+.bad {
+    background-color: #ff9999;
+}
+
+.good {
+    background-color: #adebad;
+}
+
+.short {
+    background-color: #ffdd99;
+}
